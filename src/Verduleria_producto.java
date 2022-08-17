@@ -1,13 +1,12 @@
-public class Verduleria_producto extends Productos{
+public class Verduleria_producto extends Productos {
 
     private Integer precio;
     private String unidad_de_venta;
 
 
-    Verduleria_producto(String nombre, Integer precio, String unidad_de_venta){
-        super(nombre);
+    Verduleria_producto(String nombre, Integer precio, String unidad_de_venta) {
+        super(nombre, precio);
         this.unidad_de_venta = unidad_de_venta;
-        this.precio = precio;
     }
 
     public Integer getPrecio() {
@@ -33,6 +32,7 @@ public class Verduleria_producto extends Productos{
                 "Unidad de venta: $" + unidad_de_venta
                 ;
     }
+
 }
 
 

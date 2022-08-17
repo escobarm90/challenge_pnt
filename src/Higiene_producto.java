@@ -4,9 +4,8 @@ public class Higiene_producto extends Productos{
     private Integer precio;
 
     Higiene_producto(String nombre, Integer contenido, Integer precio){
-        super(nombre);
+        super(nombre, precio);
         this.contenido = contenido;
-        this.precio = precio;
     }
 
     public Integer getContenido() {
@@ -33,4 +32,7 @@ public class Higiene_producto extends Productos{
                 "Precio: $" + precio
                 ;
     }
+
+
+
 }

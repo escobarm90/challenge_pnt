@@ -1,18 +1,15 @@
-abstract class Productos{
+abstract class Productos  {
 
 public Productos(){
 }
  protected String nombre;
+ protected Integer precio;
 
-    public Productos(String nombre){
+    public Productos(String nombre, Integer precio){
         this.nombre = nombre;
+        this.precio = precio;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+
 }

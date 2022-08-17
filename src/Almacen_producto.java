@@ -4,9 +4,8 @@ public class Almacen_producto extends Productos{
     private Integer precio;
 
     Almacen_producto(String nombre, Double litros, Integer precio){
-        super(nombre);
+        super(nombre, precio);
         this.litros = litros;
-        this.precio = precio;
     }
 
     public Double getLitros() {
@@ -33,5 +32,8 @@ public class Almacen_producto extends Productos{
                 "Precio: $" + precio
                 ;
     }
+
+
+
 
 }
