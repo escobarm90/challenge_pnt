@@ -1,15 +1,15 @@
 public class Higiene_producto extends Productos{
 
-    private Double contenido;
+    private Integer contenido;
     private Integer precio;
 
-    Higiene_producto(String nombre, Double contenido, Integer precio){
+    Higiene_producto(String nombre, Integer contenido, Integer precio){
         super(nombre);
         this.contenido = contenido;
         this.precio = precio;
     }
 
-    public Double getContenido() {
+    public Integer getContenido() {
         return contenido;
     }
 
@@ -17,7 +17,7 @@ public class Higiene_producto extends Productos{
         return precio;
     }
 
-    public void setContenido(Double contenido) {
+    public void setContenido(Integer contenido) {
         this.contenido = contenido;
     }
 
@@ -27,9 +27,7 @@ public class Higiene_producto extends Productos{
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre +
-                " /// " +
-                "Litros: " + contenido +
+        return "Nombre: " + nombre + " /// Contenido: " + contenido +
                 "ml" +
                 " /// " +
                 "Precio: $" + precio
