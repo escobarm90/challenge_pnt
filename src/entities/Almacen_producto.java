@@ -1,11 +1,16 @@
-public class Almacen_producto extends Productos{
+package entities;
+
+
+
+public class Almacen_producto extends Productos {
 
     private Double litros;
     private Integer precio;
 
-    Almacen_producto(String nombre, Double litros, Integer precio){
-        super(nombre, precio);
+    public Almacen_producto(String nombre, Double litros, Integer precio){
+        super(nombre);
         this.litros = litros;
+        this.precio=precio;
     }
 
     public Double getLitros() {
@@ -26,10 +31,10 @@ public class Almacen_producto extends Productos{
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre + " /// Litros: " + litros +
+        return "Nombre: " + getNombre() + " /// Litros: " + getLitros() +
                 "ml" +
                 " /// " +
-                "Precio: $" + precio
+                "Precio: $" + getPrecio()
                 ;
     }
 

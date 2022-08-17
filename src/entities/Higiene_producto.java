@@ -1,13 +1,21 @@
-public class Higiene_producto extends Productos{
+package entities;
+
+import entities.Productos;
+
+public class Higiene_producto extends Productos {
 
     private Integer contenido;
     private Integer precio;
 
-    Higiene_producto(String nombre, Integer contenido, Integer precio){
-        super(nombre, precio);
+    public Higiene_producto(String nombre, Integer precio, Integer contenido){
+        super(nombre);
         this.contenido = contenido;
+        this.precio=precio;
     }
 
+    public String getNombre(){
+        return this.nombre;
+    }
     public Integer getContenido() {
         return contenido;
     }
@@ -26,10 +34,10 @@ public class Higiene_producto extends Productos{
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre + " /// Contenido: " + contenido +
+        return "Nombre: " + getNombre() + " /// Contenido: " + getContenido() +
                 "ml" +
                 " /// " +
-                "Precio: $" + precio
+                "Precio: $" + getPrecio()
                 ;
     }
 
