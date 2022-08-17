@@ -1,16 +1,20 @@
-public class Verduleria_producto extends Productos implements Comparable{
+public class Verduleria_producto extends Productos{
 
-    Double litros;
-    Double precio;
+    private Double litros;
+    private Double precio;
+    private String unidad_de_venta;
 
-    Verduleria_producto(String nombre, Double litros, Double precio){
-        nombre = super.nombre;
+
+    Verduleria_producto(String nombre, Double litros, Double precio, String unidad_de_venta){
+        super(nombre);
+        this.litros = litros;
+        this.precio = precio;
+        this.unidad_de_venta= unidad_de_venta;
 
 }
 
 
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
+
+
+
 }
