@@ -20,7 +20,7 @@ public class P_Perfumeria extends Producto{
     @Override
     public String toString() {
         return "Nombre:" + nombre + " /// " +
-                "litros:" + contenido + "ml /// " +
+                "Contenido:" + contenido + "ml /// " +
                 "precio: $" + precio;
     }
 }

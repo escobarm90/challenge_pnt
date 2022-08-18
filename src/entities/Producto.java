@@ -1,6 +1,6 @@
 package entities;
 
-public class Producto {
+public class Producto implements Comparable<Producto> {
 
     String nombre;
     Integer precio;
@@ -8,5 +8,18 @@ public class Producto {
     Producto(String nombre, Integer precio){
         this.nombre = nombre;
         this.precio = precio;
+    }
+
+    public Integer getPrecio() {
+        return precio;
+    }
+
+    @Override
+    public int compareTo(Producto otro) {
+            return this.precio.compareTo(otro.precio);
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 }

@@ -15,7 +15,7 @@ public class P_Verduleria extends Producto{
     @Override
     public String toString() {
         return "Nombre: " + nombre + " /// " +
-                "Precio $:" + precio + "ml /// " +
+                "Precio $:" + precio +  "/// " +
                 "Unidad de Venta: " + uventa;
     }
 }
