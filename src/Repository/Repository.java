@@ -47,17 +47,15 @@ public class Repository implements Comparable<Producto> {
 
     @Override
     public int compareTo(Producto o) {
-
+        int x = 0;
         if(o.getPrecio() > valor ){
             valor = o.getPrecio();
             return 1;
         }
-
         if(o.getPrecio() < valor){
             valor = o.getPrecio();
             return -1;
         }
-
         return 0;
     }
 }
